@@ -19,17 +19,17 @@ class ItemViewHolder(private val binding: ItemLayoutBinding): RecyclerView.ViewH
             // even thought the ViewHolder is not releasing the view at all
             // The attached is not helping, as it happens after binding.
             // (check the Log Track)
-            
-//            addOnAttachStateChangeListener(object : View.OnAttachStateChangeListener {
-//                override fun onViewAttachedToWindow(v: View) {
-//                    initView(this@with)
-//                    Log.d("Track","Attached $v")
-//                }
-//                override fun onViewDetachedFromWindow(v: View) {
-//                    destroyView()
-//                    Log.d("Track","Detached $v")
-//                }
-//            })
+
+            addOnAttachStateChangeListener(object : View.OnAttachStateChangeListener {
+                override fun onViewAttachedToWindow(v: View) {
+                    initView(this@with)
+                    Log.d("Track","Attached $v")
+                }
+                override fun onViewDetachedFromWindow(v: View) {
+                    destroyView()
+                    Log.d("Track","Detached $v")
+                }
+            })
         }
 
     }
