@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/demo_android_jetpack_compose_fragment_navigation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/demo_android_jetpack_compose_graphicslayer_modifier" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/demo_ios_android_webview_cookies_sync" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dynamic-tabs" vcs="Git" />
+  </component>
+</project>
