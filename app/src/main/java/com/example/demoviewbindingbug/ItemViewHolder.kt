@@ -39,24 +39,3 @@ class ItemViewHolder(private val binding: ItemLayoutBinding): RecyclerView.ViewH
         imageComponent.bindView(model.imageId, binding.imageFrame)
     }
 }
-
-class CustomImageComponent {
-    private var viewBinding: ImageViewBinding? = null
-
-    fun initView(container: ViewGroup) {
-        viewBinding = ImageViewBinding.inflate(
-            LayoutInflater.from(container.context), container, true
-        )
-    }
-
-    fun bindView(imageId: Int, container: ViewGroup? = null) {
-        container?.let {
-            Log.d("Track","Binding $it with $viewBinding")
-        }
-        viewBinding?.image?.setImageResource(imageId)
-    }
-
-    fun destroyView() {
-        viewBinding = null
-    }
-}
